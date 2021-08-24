@@ -6,7 +6,7 @@ const ANY = 'any'
 
 export function filter(rawData, config) {
     let filteredData = rawData
-    // console.log(config);
+    console.log(config);
     if (config.type !== ANY) {
         filteredData = filteredData.filter((it) => it.offer.type === config.type)
     }
